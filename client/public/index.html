@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Auction for NFTs!</title>
+    <!-- 导入web3-legacy -->
+    <!-- <script language="javascript" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css"> -->
+    <link rel="stylesheet" href="https://static.pingendo.com/bootstrap/bootstrap-4.3.1.css">
+    
+  </head>
+  <body style="background-color:antiquewhite;">
+    <nav class="navbar bg-primary navbar-white">
+      <div class="container">
+        <!-- <i class="fa d-inline fa-lg fa-circle"></i> -->
+      <div class="navbar-brand" style="display: inline;">
+        <i class="fa d-inline fa-lg fa-circle"></i>
+        <b>登陆的账户：</b>
+        <b style="color:wheat;" id="accountDisplay">Your account</b>
+      </div style="display:inline">
+
+      </div> 
+    </nav>
+    <div class="py-5">
+      <div class="container">
+        <div class="row">
+          <!-- 左边是仓库显示拥有的NFT(名字+稀有度), 右边是正在出售的物品 -->
+          <div class="col-md-6" id = "forge1" style="background-color:bisque;height:auto;">
+          </div>
+          <div class="col-md-6" id = "garage" style="background-color:azure;height: 400px;;overflow:auto">
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="belongings" style="display:flex;width:auto;text-align:center;justify-content:center;background-color:azure;"></div>
+    <nav class="navbar navbar-dark bg-dark" >
+      <div class="container" id = "claimContainer">  </div>
+    </nav>
+          <!-- 左边是仓库显示拥有的NFT(名字+稀有度), 右边是正在出售的物品 -->
+          <div id = "startAuction" style="display:flex;width:auto;text-align:center;justify-content:center ;"></div>
+          <HR style="FILTER:alpha(opacity=100,finishopacity=0,style=3)" width="80%"color=#987cb9 SIZE=3>
+          <div id = "biddingforItems" style="display:flex;width:auto;text-align:center;justify-content:center ;"></div>
+          <HR style="FILTER:alpha(opacity=100,finishopacity=0,style=3)" width="80%"color=#987cb9 SIZE=3>
+          <div id = "biddings" style="background-color:azure;overflow:scroll">
+          </div>
+      
+    <div id="root"></div>
+  </body>
+</html>
